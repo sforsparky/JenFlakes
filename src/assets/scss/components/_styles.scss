@@ -1,0 +1,163 @@
+.flake {
+  padding: 5rem 2rem 7rem;
+  @include breakpoint(medium up){
+    padding: 15rem 0 18rem 0;
+  }
+  &__date {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+}
+.flakes {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#one {
+  background-size: cover;
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Reenie+Beanie');
+  .headline-font {
+    font-family: 'Reenie Beanie', sans-serif;
+    color: #B9C782;
+    font-size: 8rem;
+    line-height: 1;
+    @include breakpoint(medium up) {
+      font-size: 14vw;
+    }
+  }
+  .body-font {
+    font-family: 'Playfair Display', sans-serif;
+    @include breakpoint(medium up){
+      font-size: 2vw;
+    }
+    color: #151515;
+  }
+  text-align: center;
+}
+
+#two {
+  .row {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans+Narrow');
+  .headline-font {
+    font-family: 'Abril Fatface', serif;
+    color: white;
+    z-index: 5;
+    position: relative;
+    line-height: 1;
+    font-size: 5rem;
+    @include breakpoint(medium up) {
+      font-size: 10em;
+      text-shadow: 0 2px 0px #FFE441,
+                   0 4px 0px #FFE441,
+                   0 6px 0px #FFE441;
+    }
+    span {
+      font-family: 'Reenie Beanie', sans-serif;
+    }
+  }
+  .body-font {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2rem;
+    @include breakpoint(medium up) {
+      font-size: 4rem;
+    }
+  }
+  img {
+    margin: 2rem 0;
+    @include breakpoint(medium up) {
+      display: block;
+      height: auto;
+      width: auto;
+      position: absolute;
+      top: -100px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+
+#three {
+  @import url('https://fonts.googleapis.com/css?family=Dosis');
+  background: #F3F2ED url('../img/03-picture.jpg') center center no-repeat;
+  background-size: cover;
+  @include breakpoint(medium up){
+    background-size: 1000px auto;
+  }
+  text-align: center;
+  .row {
+    position: relative;
+    max-width: 100%;
+  }
+  .row > div {
+    margin: 0 auto;
+  }
+  .row p {
+    display: block;
+    width: 100%;
+  }
+  .headline-font {
+    color: #FFF;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 3rem;
+    @include breakpoint(medium up){
+      font-size: 14vw;
+      line-height: 1;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+}
+
+#four {
+  @import url('https://fonts.googleapis.com/css?family=League+Script');
+  @import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
+  background: #f2f2f0 url('../img/04-bg.jpg') no-repeat;
+  background-position: bottom left;
+  background-size: 100% auto;
+  @include breakpoint(medium up) {
+    background-position: top left;
+    background-size: cover;
+  }
+  text-align: center;
+  .row {
+    flex-direction: column;
+  }
+  .excuse {
+    position: relative;
+  }
+  .flake {
+    &__date {
+
+    }
+  }
+  .headline-font {
+    font-family: "Londrina Solid";
+    text-transform: uppercase;
+    color: #F3F344;
+    font-size: 14vw;
+    line-height: 1;
+  }
+  .overlay {
+    @include breakpoint(medium up) {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+  .body-font {
+    font-family: "League Script";
+    @include breakpoint(medium up) {
+      font-size: 4.8rem;
+      color: #151515;
+      line-height: 2;
+      font-size: 7vw;
+    }
+  }
+}
