@@ -223,11 +223,11 @@
 }
 
 #six {
-  background: #F4F2F3 url('../img/06-beerbg.jpg') bottom -100px right 0px no-repeat;
+  background: #F4F2F3 url('../img/06-beerbg.jpg') bottom -100px center no-repeat;
   background-size: auto 200px;
   @include breakpoint(medium up) {
-    background: #F4F2F3 url('../img/06-beerbg.jpg') center no-repeat;
-    background-size: 80% auto;
+    background: #F4F2F3 url('../img/06-beerbg.jpg') center center no-repeat;
+    background-size: auto 75%;
   }
   .flake__date {
     color: #FF491A;
