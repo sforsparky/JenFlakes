@@ -21,8 +21,16 @@
 }
 
 #intro {
+  @include breakpoint(medium up) {
+    padding: 8rem 0 12rem 0;
+  }
   p {
-    font-size: 3rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    @include breakpoint(medium up) {
+      font-size: 3rem;
+    }
     margin-bottom: 2rem;
   }
 }
@@ -215,18 +223,26 @@
 }
 
 #six {
-  background: #F4F2F3 url('../img/06-beerbg.jpg') center no-repeat;
-  background-size: 80% auto;
+  background: #F4F2F3 url('../img/06-beerbg.jpg') bottom -100px right 0px no-repeat;
+  background-size: auto 200px;
+  @include breakpoint(medium up) {
+    background: #F4F2F3 url('../img/06-beerbg.jpg') center no-repeat;
+    background-size: 80% auto;
+  }
   .flake__date {
     color: #FF491A;
     text-align: center;
   }
   .headline-font {
+    font-size: 3rem;
     color: #FF491A;
-    font-size: 6rem;
     text-align: center;
     line-height: 1;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+    @include breakpoint(medium up) {
+      font-size: 6rem;
+      margin-bottom: 6rem;
+    }
   }
   .texts {
     flex-direction: column;

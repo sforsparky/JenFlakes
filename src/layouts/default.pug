@@ -3,10 +3,26 @@
 doctype html
 html.no-js(lang="en")
   head
+    | <!-- Google Tag Manager -->
+    | <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    | new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    | j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    | 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    | })(window,document,'script','dataLayer','GTM-PKQQHRD');</script>
+    | <!-- End Google Tag Manager -->
+    | <!-- Global site tag (gtag.js) - Google Analytics -->
+    | <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8721608-7"></script>
+    | <script>
+    |   window.dataLayer = window.dataLayer || [];
+    |   function gtag(){dataLayer.push(arguments);}
+    |   gtag('js', new Date());
+    | gtag('config', 'UA-8721608-7');
+    | </script>
+
     meta(charset="utf-8")
     meta(http-equiv="x-ua-compatible" content="ie=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title JenFlakedOn.Us
+    title Flaked
     link(rel="stylesheet" href="{{root}}assets/css/app.css")
     | <script src="https://use.typekit.net/dyw8dub.js"></script>
     | <script>try{Typekit.load({ async: true });}catch(e){}</script>
